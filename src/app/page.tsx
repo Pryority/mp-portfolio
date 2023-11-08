@@ -13,7 +13,7 @@ export default function Home() {
   // const hello = await api.post.hello.query({ text: "from tRPC" });
 
   return (
-    <main className="flex w-screen snap-y flex-col items-center justify-start overflow-x-hidden overflow-y-scroll bg-background">
+    <main className="flex snap-y flex-col items-center justify-start overflow-x-hidden  bg-background">
       <Hero />
       <Row2 />
       <Showcase />

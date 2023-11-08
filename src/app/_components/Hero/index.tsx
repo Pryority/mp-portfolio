@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function Hero() {
   return (
-    <div className="relative z-0 flex w-screen flex-col items-center justify-center overflow-visible text-left md:min-h-[80vh] md:flex-row">
+    <div className="relative z-0 flex w-full flex-col items-center justify-center overflow-visible text-left md:min-h-[80vh] md:flex-row">
       <div className="absolute top-0 z-0 flex h-2/3 w-full overflow-clip">
         <Image
           src={"/Matt-japan-mountain.jpg"}

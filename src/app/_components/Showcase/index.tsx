@@ -16,7 +16,7 @@ export default async function Showcase() {
     (projectId) => projects.find((project) => project.id === projectId) ?? null,
   );
   return (
-    <div className="relative z-0 flex min-h-[40vh] w-screen flex-col items-center justify-center bg-amber-50 bg-inherit text-left md:flex-row">
+    <div className="relative z-0 flex min-h-[40vh] w-full flex-col items-center justify-center bg-amber-50 bg-inherit text-left md:flex-row">
       <div className="absolute inset-0 z-0 bg-gradient-to-b from-background via-background/70 to-background/20" />
       <div className="absolute top-1/2 grid w-full max-w-6xl -translate-y-1/2 grid-cols-2 items-center justify-around gap-8 md:gap-16">
         <div className="flex h-fit w-full flex-col gap-8">

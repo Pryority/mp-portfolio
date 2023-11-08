@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function Row2() {
   return (
-    <div className="relative z-0 flex min-h-[20vh] w-screen flex-col items-center justify-center overflow-visible bg-inherit text-left md:flex-row">
+    <div className="relative z-0 flex min-h-[20vh] w-full flex-col items-center justify-center overflow-visible bg-inherit text-left md:flex-row">
       <div className="absolute top-0 flex w-full max-w-7xl -translate-y-1/2 items-center justify-around gap-8 md:gap-16">
         <div className="relative top-0 z-0 flex h-[1024px] w-[1024px]">
           <Image
