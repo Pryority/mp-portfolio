@@ -33,7 +33,7 @@ export function CreatePost() {
       />
       <button
         type="submit"
-        className="rounded-full bg-white/10 px-10 py-3 font-semibold transition hover:bg-white/20"
+        className="rounded-full bg-primary/10 px-10 py-3 font-semibold transition hover:bg-primary/20"
         disabled={createPost.isLoading}
       >
         {createPost.isLoading ? "Submitting..." : "Submit"}

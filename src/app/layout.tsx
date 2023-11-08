@@ -3,6 +3,7 @@ import "~/styles/globals.css";
 import { GeistSans } from "geist/font";
 import { cookies } from "next/headers";
 
+import { ThemeProvider } from "./_components/theme-provider";
 import { TRPCReactProvider } from "~/trpc/react";
 
 export const metadata = {
@@ -20,7 +21,9 @@ export default function RootLayout({
     <html lang="en">
       <body className={`font-sans ${GeistSans.variable}`}>
         <TRPCReactProvider cookies={cookies().toString()}>
-          {children}
+          <ThemeProvider attribute="class" defaultTheme="system">
+            {children}
+          </ThemeProvider>
         </TRPCReactProvider>
       </body>
     </html>
