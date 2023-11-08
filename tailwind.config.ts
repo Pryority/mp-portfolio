@@ -37,6 +37,10 @@ module.exports = {
           DEFAULT: "hsl(var(--green))",
           foreground: "hsl(var(--green-foreground))",
         },
+        cyan: {
+          DEFAULT: "hsl(var(--cyan))",
+          foreground: "hsl(var(--cyan-foreground))",
+        },
         pt: {
           DEFAULT: "hsl(var(--pt))",
         },
