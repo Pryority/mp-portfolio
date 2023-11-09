@@ -39,7 +39,7 @@ export default async function Showcase() {
               <ProjectItem key={project?.id} project={project} />
             ))}
         </div>
-        <p className="w-full px-8 text-left tracking-wide text-primary-foreground sm:hidden md:block 2xl:max-w-3xl 2xl:text-2xl 2xl:leading-[40px]">
+        <p className="block  w-full px-8 text-left tracking-wide text-primary-foreground sm:hidden 2xl:max-w-3xl 2xl:text-2xl 2xl:leading-[40px]">
           Explore a curated selection of my recent projects that highlight my
           skills and expertise in web development. From sleek corporate websites
           to interactive web applications, each project reflects my dedication
