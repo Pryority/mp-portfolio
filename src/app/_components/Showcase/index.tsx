@@ -2,6 +2,7 @@ import Image from "next/image";
 import type { Project } from "typings";
 import client from "~/sanity/sanity.client";
 import { getProjects } from "~/sanity/sanity.query";
+import { ArrowTopRightOnSquareIcon } from "@heroicons/react/24/solid";
 
 import imageUrlBuilder from "@sanity/image-url";
 
@@ -16,27 +17,34 @@ export default async function Showcase() {
     (projectId) => projects.find((project) => project.id === projectId) ?? null,
   );
   return (
-    <div className="relative z-0 flex min-h-[40vh] w-full flex-col items-center justify-center bg-amber-50 bg-inherit text-left md:flex-row">
-      <div className="absolute inset-0 z-0 bg-gradient-to-b from-background via-background/70 to-background/20" />
-      <div className="absolute top-1/2 grid w-full max-w-6xl -translate-y-1/2 grid-cols-2 items-center justify-around gap-8 md:gap-16">
-        <div className="flex h-fit w-full flex-col gap-8">
-          <h4 className="text-center text-4xl font-medium tracking-tight  text-lime-300 dark:text-amber-400  md:text-left">
+    <div className="relative z-10 flex h-[600px] w-full flex-col items-center justify-center overflow-visible bg-secondary text-left scrollbar-thin scrollbar-thumb-red-500 md:flex-row 2xl:min-h-[50vh]">
+      <div className="absolute left-0 top-0 h-[900px] w-full -skew-y-1 bg-lime-800/10 dark:bg-[#0a0c0f] sm:h-[768px] 2xl:top-0 2xl:h-[720px]" />
+      {/* <div className="absolute inset-0 z-0 bg-gradient-to-b from-background via-background/70 to-background/20" /> */}
+      <div className="absolute top-40 grid  grid-cols-1 items-center justify-around gap-8 overflow-clip sm:grid-cols-2 md:gap-16 xl:grid-cols-6 2xl:top-1/2 2xl:ml-40 2xl:mr-2 2xl:grid-cols-8">
+        <div className="col-span-1 flex h-fit w-full flex-col items-center gap-8 pl-8 sm:items-start 2xl:col-span-2 2xl:pt-40">
+          <h4 className="text-center text-2xl font-medium tracking-tight text-amber-600 dark:text-amber-400  sm:text-left md:text-left  2xl:text-4xl">
             Portfolio Showcase
           </h4>
-          <p className="text-center text-xl tracking-wide text-primary-foreground md:text-left">
-            Dive into my world of creativity and innovation. Explore a curated
-            selection of my recent projects that highlight my skills and
-            expertise in web development. From sleek corporate websites to
-            interactive web applications, each project reflects my dedication to
-            quality and user experience.
+          <p className="hidden text-left tracking-wide text-primary-foreground sm:block md:text-left xl:w-5/6 2xl:max-w-3xl 2xl:text-2xl 2xl:leading-[40px]">
+            Explore a curated selection of my recent projects that highlight my
+            skills and expertise in web development. From sleek corporate
+            websites to interactive web applications, each project reflects my
+            dedication to quality and user experience.
           </p>
         </div>
-        <div className="flex w-screen items-center gap-4 overflow-x-scroll">
+        <div className="no-scrollbar flex w-full items-center gap-4 overflow-x-scroll xl:col-span-5 2xl:col-span-6">
+          <div className="absolute right-0  z-50 h-full w-[40px] bg-gradient-to-l from-[#0a0c0f] via-[#0a0c0f]/50 to-transparent 2xl:top-0" />
           {projects &&
             orderedProjects.map((project: Project | null) => (
               <ProjectItem key={project?.id} project={project} />
             ))}
         </div>
+        <p className="w-full px-8 text-left tracking-wide text-primary-foreground sm:hidden md:block 2xl:max-w-3xl 2xl:text-2xl 2xl:leading-[40px]">
+          Explore a curated selection of my recent projects that highlight my
+          skills and expertise in web development. From sleek corporate websites
+          to interactive web applications, each project reflects my dedication
+          to quality and user experience.
+        </p>
       </div>
     </div>
   );
@@ -48,16 +56,16 @@ interface ProjectItemProps {
 
 function ProjectItem({ project }: ProjectItemProps) {
   return (
-    <article className="relative flex h-96 w-96 justify-center p-4">
+    <article className="relative flex h-80 w-[512px] justify-center p-4 2xl:w-[640px] ">
       <div
         id="project"
-        className="relative h-full w-screen rounded-md bg-slate-400"
+        className="relative h-full w-screen rounded-md shadow-md shadow-sky-900/40"
       >
         {project ? (
           <Image
             src={urlFor(project.demoImage.asset._ref).url()}
             alt=""
-            className="object-cover"
+            className="rounded-sm object-cover"
             fill
             sizes="100vw"
           />
@@ -65,9 +73,10 @@ function ProjectItem({ project }: ProjectItemProps) {
           <div>Could not load project</div>
         )}
       </div>
-      <p className="absolute bottom-2 bg-primary px-4 py-2 text-primary-foreground">
-        {project?.title}
-      </p>
+      <div className="absolute bottom-2 flex items-center gap-4 rounded-[2px] border border-lime-900 bg-primary/90 px-4 py-2 backdrop-blur-xl">
+        <p className="text-amber-800 dark:text-amber-500">{project?.title}</p>
+        <ArrowTopRightOnSquareIcon className="h-5 w-5" />
+      </div>
     </article>
   );
 }
