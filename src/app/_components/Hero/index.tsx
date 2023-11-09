@@ -6,8 +6,8 @@ import Navbar from "../Navbar";
 
 export default function Hero() {
   return (
-    <div className="relative z-0 flex h-[340px] w-full flex-col items-center justify-center overflow-visible border-2 border-amber-500 bg-secondary text-left md:min-h-[80vh] md:flex-row">
-      <div className="absolute top-0 z-0 flex h-full w-full overflow-clip border-2 border-violet-500">
+    <div className="relative z-0 flex h-[340px] w-full flex-col items-center justify-center overflow-visible  bg-secondary text-left md:min-h-[80vh] md:flex-row">
+      <div className="absolute top-0 z-0 flex h-full w-full overflow-clip ">
         <Image
           src={"/Matt-japan-mountain.jpg"}
           alt=""
@@ -17,7 +17,7 @@ export default function Hero() {
         <div className="absolute inset-0 z-0 bg-gradient-to-t from-secondary via-secondary/50 to-secondary/5 md:hidden" />
         <div className="inset-0 z-0 hidden bg-gradient-to-t from-secondary via-secondary/10 to-secondary/5 md:absolute" />
       </div>
-      <div className="absolute left-0 top-0 flex h-full w-full flex-col items-center justify-start border-2 border-pink-500 md:px-16">
+      <div className="0 absolute left-0 top-0 flex h-full w-full flex-col items-center justify-start md:px-16">
         <Navbar />
         <div className="grid h-full w-full grid-cols-1 items-center justify-center gap-8 px-2 md:w-1/2 md:gap-16">
           <div className="flex h-full flex-col justify-center gap-4">

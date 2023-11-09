@@ -17,8 +17,8 @@ export default async function Showcase() {
     (projectId) => projects.find((project) => project.id === projectId) ?? null,
   );
   return (
-    <div className="relative z-10 flex h-[600px] w-full flex-col items-center justify-center overflow-visible bg-secondary text-left scrollbar-thin scrollbar-thumb-red-500 md:flex-row 2xl:min-h-[50vh]">
-      <div className="absolute left-0 top-0 h-[900px] w-full -skew-y-1 bg-lime-800/10 dark:bg-[#0a0c0f] sm:h-[768px] 2xl:top-0 2xl:h-[720px]" />
+    <div className="relative z-30 flex h-[600px] w-full flex-col items-center justify-center overflow-visible bg-secondary text-left scrollbar-thin scrollbar-thumb-red-500 md:flex-row 2xl:min-h-[50vh]">
+      <div className="absolute left-0 top-0 h-[900px] w-full -skew-y-6 bg-lime-800/10 dark:bg-[#0a0c0f] sm:h-[680px] 2xl:top-0 2xl:h-[720px]" />
       {/* <div className="absolute inset-0 z-0 bg-gradient-to-b from-background via-background/70 to-background/20" /> */}
       <div className="absolute top-40 grid  grid-cols-1 items-center justify-around gap-8 overflow-clip sm:grid-cols-2 md:gap-16 xl:grid-cols-6 2xl:top-1/2 2xl:ml-40 2xl:mr-2 2xl:grid-cols-8">
         <div className="col-span-1 flex h-fit w-full flex-col items-center gap-8 pl-8 sm:items-start 2xl:col-span-2 2xl:pt-40">

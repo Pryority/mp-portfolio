@@ -3,7 +3,7 @@ import { ThemeToggle } from "../ui/theme-toggle";
 
 export default function Navbar() {
   return (
-    <div className="z-50 flex h-fit w-full max-w-full flex-col items-center justify-center overflow-visible border-2 border-red-500 text-left md:flex-row">
+    <div className="z-50 flex h-fit w-full max-w-full flex-col items-center justify-center overflow-visible  text-left md:flex-row">
       <header className="z-50 flex w-full items-center md:justify-between md:px-16 md:py-8">
         <div className="flex w-full flex-col items-start text-center">
           <p className="whitespace-nowrap text-3xl font-extrabold tracking-tight text-slate-900 md:text-5xl">

@@ -7,7 +7,7 @@ import { getSocials } from "~/sanity/sanity.query";
 export default async function GTKM() {
   const socials: Social[] = await getSocials();
   return (
-    <div className="relative z-30 flex h-[768px] w-full flex-col items-center justify-center overflow-visible border-2 border-cyan-500 bg-secondary text-left sm:z-20 sm:h-[600px] sm:min-h-[80vh] md:flex-row 2xl:min-h-[32vh]">
+    <div className="relative z-30 flex h-[768px] w-full flex-col items-center justify-center overflow-visible  bg-secondary text-left sm:z-20 sm:h-[600px] sm:min-h-[80vh] md:flex-row 2xl:min-h-[32vh]">
       <div className="absolute top-1/2 flex w-full max-w-7xl -translate-y-1/2 flex-col items-center justify-around gap-8 pb-24 pt-16 sm:top-80 md:flex-row md:gap-16 2xl:top-8">
         <div className="relative top-4 z-0 flex h-40 w-40 2xl:h-[1024px] 2xl:w-[1024px]">
           <Image

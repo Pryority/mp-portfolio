@@ -7,7 +7,7 @@ export default function Home() {
   // const hello = await api.post.hello.query({ text: "from tRPC" });
 
   return (
-    <main className="flex min-h-screen flex-col items-center justify-start overflow-x-hidden overflow-y-hidden">
+    <main className="flex min-h-screen flex-col items-center justify-start overflow-x-hidden ">
       <Hero />
       <GTKM />
       <Showcase />
