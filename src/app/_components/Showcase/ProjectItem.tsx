@@ -9,8 +9,7 @@ import client from "@/sanity/sanity.client";
 import imageUrlBuilder from "@sanity/image-url";
 import {
   Card,
-  CardContent,
-  CardDescription,
+  CardContentNoPadding,
   CardFooter,
   CardHeader,
   CardTitle,
@@ -26,14 +25,26 @@ export default function ProjectItem({ project }: ProjectItemProps) {
   const PROJECT_URL = project?.link ?? "";
   return (
     //<Draggable axis="x" bounds="parent">
-    <Card className="flex flex-col">
+    <Card className="flex h-[320px] w-[384px] flex-col">
       <CardHeader>
-        <CardTitle>Card Title</CardTitle>
-        <CardDescription>Card Description</CardDescription>
+        <CardTitle>{project?.title}</CardTitle>
+        {/* <CardDescription>{project?}</CardDescription> */}
       </CardHeader>
-      <CardContent>
-        <p>Card Content</p>
-      </CardContent>
+      <CardContentNoPadding className="relative flex h-full w-full">
+        <div id="project" className="relative h-full w-full rounded-md">
+          {project ? (
+            <Image
+              src={urlFor(project.demoImage.asset._ref).url()}
+              alt=""
+              className="rounded-sm object-contain"
+              fill
+              sizes="100vw"
+            />
+          ) : (
+            <div>Could not load project</div>
+          )}
+        </div>
+      </CardContentNoPadding>
       <CardFooter>
         <p>Card Footer</p>
       </CardFooter>

@@ -64,6 +64,14 @@ const CardContent = React.forwardRef<
 ));
 CardContent.displayName = "CardContent";
 
+const CardContentNoPadding = React.forwardRef<
+  HTMLDivElement,
+  React.HTMLAttributes<HTMLDivElement>
+>(({ className, ...props }, ref) => (
+  <div ref={ref} className={cn("pt-0", className)} {...props} />
+));
+CardContentNoPadding.displayName = "CardContent";
+
 const CardFooter = React.forwardRef<
   HTMLDivElement,
   React.HTMLAttributes<HTMLDivElement>
@@ -83,4 +91,5 @@ export {
   CardTitle,
   CardDescription,
   CardContent,
+  CardContentNoPadding,
 };
