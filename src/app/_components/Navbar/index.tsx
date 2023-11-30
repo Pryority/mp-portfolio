@@ -1,5 +1,5 @@
-import { Button } from "../ui/button";
-import { ThemeToggle } from "../ui/theme-toggle";
+// import { Button } from "@/app/_components/ui/button";
+import { ThemeToggle } from "@/app/_components/ui/theme-toggle";
 
 export default function Navbar() {
   return (
@@ -17,8 +17,8 @@ export default function Navbar() {
             Web Developer
           </p>
         </div>
-        <div className="hidden w-full justify-end gap-4">
-          <Button variant={"outline"}>Login</Button>
+        <div className="flex w-full justify-end gap-4">
+          {/* <Button variant={"outline"}>Login</Button> */}
           <ThemeToggle />
         </div>
       </div>

@@ -1,6 +1,6 @@
 export default function WhyChooseMe() {
   return (
-    <div className="relative z-0 flex h-[1024px] w-full flex-col items-center justify-center bg-stone-800 text-left sm:h-[680px] md:flex-row 2xl:top-0 2xl:min-h-[40vh]">
+    <div className="relative z-0 flex h-[1024px] w-full flex-col items-center justify-center bg-secondary text-left sm:h-[680px] md:flex-row 2xl:top-0 2xl:min-h-[40vh]">
       {/* <div className="absolute inset-0 top-0 z-0 h-[500px] -translate-y-80 bg-gray-800" /> */}
       <div className="grid w-5/6 items-center justify-center gap-8 pt-80 sm:max-w-xl sm:pt-40 md:gap-16">
         <h4 className="text-center text-4xl font-medium tracking-tight  text-lime-300 dark:text-lime-400  md:text-left">

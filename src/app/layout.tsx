@@ -1,10 +1,10 @@
-import "~/styles/globals.css";
+import "@/styles/globals.css";
 
 import { GeistSans } from "geist/font";
 import { cookies } from "next/headers";
 
 import { ThemeProvider } from "./_components/theme-provider";
-import { TRPCReactProvider } from "~/trpc/react";
+import { TRPCReactProvider } from "@/trpc/react";
 
 export const metadata = {
   title: "Create T3 App",

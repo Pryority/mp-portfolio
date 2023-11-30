@@ -1,15 +1,15 @@
 import React from "react";
 import Image from "next/image";
-import type { Social } from "typings";
+import type { Social } from "@/../typings";
 import { SocialIcon } from "react-social-icons";
-import { getSocials } from "~/sanity/sanity.query";
+import { getSocials } from "@/sanity/sanity.query";
 
 export default async function GTKM() {
   const socials: Social[] = await getSocials();
   return (
     <div className="relative z-30 flex h-[768px] w-full flex-col items-center justify-center overflow-visible  bg-secondary text-left sm:z-20 sm:max-md:h-[600px] md:flex-row 2xl:min-h-[32vh]">
-      <div className="absolute top-1/2 flex w-full max-w-7xl -translate-y-1/2 flex-col items-center justify-around gap-8 pb-24 pt-16 sm:top-80 md:grid md:grid-cols-3 md:px-8 md:pb-0 2xl:top-8">
-        <div className="relative top-4 z-0 flex h-40 w-40 items-center justify-center md:top-0 md:h-full md:w-full 2xl:h-[1024px] 2xl:w-[1024px]">
+      <div className="absolute top-1/2 flex w-full max-w-7xl -translate-y-1/2 flex-col items-center justify-around gap-8 pb-24 pt-16 sm:top-80 md:grid md:grid-cols-3 md:px-8 md:pb-0 2xl:top-1/2">
+        <div className="relative top-4 z-0 flex h-40 w-40 items-center justify-center md:top-0 md:h-full md:w-full">
           <Image
             src={"/headshot-no-bg.png"}
             alt=""
@@ -38,17 +38,6 @@ export default async function GTKM() {
               />
             ))}
           </div>
-          {/* <div className="flex w-1/2 items-center gap-4">
-            <Button
-              className="flex w-full justify-center"
-              variant={"secondary"}
-            >
-              Learn More
-            </Button>
-            <Button className="flex w-full justify-center" variant={"default"}>
-              Start a Project
-            </Button>
-          </div> */}
         </div>
       </div>
     </div>

@@ -1,8 +1,7 @@
 import React from "react";
-// import { ThemeToggle } from "../ui/theme-toggle";
-import { Button } from "../ui/button";
+import { Button } from "@/app/_components/ui/button";
 import Image from "next/image";
-import Navbar from "../Navbar";
+import Navbar from "@/app/_components/Navbar";
 
 export default function Hero() {
   return (
@@ -24,9 +23,6 @@ export default function Hero() {
             <h1 className="text-left text-3xl font-medium leading-8 tracking-tighter text-secondary min-[414px]:w-3/5 md:text-left md:text-6xl 2xl:text-6xl ">
               Crafting Digital Experiences
             </h1>
-            {/* <h1 className="text-left text-base font-medium tracking-tight text-slate-900 md:text-left 2xl:text-6xl">
-              Crafting Digital Experiences That Inspire, Engage, and Delight
-            </h1> */}
             <h2 className="w-3/4 text-left text-sm tracking-wide text-primary-foreground min-[414px]:w-[60%] md:text-left md:text-xl md:text-primary/80 min-[896px]:w-[62%] 2xl:text-2xl">
               Transforming Ideas into Seamless, User-Centric Web Solutions
             </h2>
