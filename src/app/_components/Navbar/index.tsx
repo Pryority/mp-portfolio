@@ -3,9 +3,9 @@ import { ThemeToggle } from "../ui/theme-toggle";
 
 export default function Navbar() {
   return (
-    <header className="z-50 flex h-fit w-full flex-col items-center justify-center overflow-visible p-2 text-left md:flex-row">
+    <header className="z-50 flex h-fit w-full flex-col items-center justify-center overflow-visible p-2 text-left md:flex-row lg:max-w-6xl">
       <div className="z-50 flex w-full items-center md:justify-between">
-        <div className="flex w-full flex-col items-end text-center">
+        <div className="flex w-full flex-col items-end text-center lg:items-start">
           <p className="whitespace-nowrap text-3xl font-extrabold tracking-tight text-slate-900 md:text-5xl">
             Matthew
             <span className="bg-gradient-to-tr from-amber-600 via-amber-700  to-amber-800 bg-clip-text text-transparent">

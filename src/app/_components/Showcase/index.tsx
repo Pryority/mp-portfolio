@@ -1,14 +1,8 @@
-import Image from "next/image";
 import type { Project } from "typings";
-import client from "~/sanity/sanity.client";
 import { getProjects } from "~/sanity/sanity.query";
-import { ArrowTopRightOnSquareIcon } from "@heroicons/react/24/solid";
 
-import imageUrlBuilder from "@sanity/image-url";
+import ProjectItem from "./ProjectItem";
 
-function urlFor(source: string) {
-  return imageUrlBuilder(client).image(source);
-}
 const orderedProjectIds = [1, 2, 3, 4, 5, 6, 7, 8];
 
 export default async function Showcase() {
@@ -47,36 +41,5 @@ export default async function Showcase() {
         </p>
       </div>
     </div>
-  );
-}
-
-interface ProjectItemProps {
-  project: Project | null;
-}
-
-function ProjectItem({ project }: ProjectItemProps) {
-  return (
-    <article className="relative flex h-80 w-[512px] justify-center p-4 2xl:w-[640px] ">
-      <div
-        id="project"
-        className="relative h-full w-screen rounded-md shadow-md shadow-sky-900/40"
-      >
-        {project ? (
-          <Image
-            src={urlFor(project.demoImage.asset._ref).url()}
-            alt=""
-            className="rounded-sm object-cover"
-            fill
-            sizes="100vw"
-          />
-        ) : (
-          <div>Could not load project</div>
-        )}
-      </div>
-      <div className="absolute bottom-2 flex items-center gap-4 rounded-[2px] border border-lime-900 bg-primary/90 px-4 py-2 backdrop-blur-xl">
-        <p className="text-amber-800 dark:text-amber-500">{project?.title}</p>
-        <ArrowTopRightOnSquareIcon className="h-5 w-5" />
-      </div>
-    </article>
   );
 }

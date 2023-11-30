@@ -1,5 +1,5 @@
 {
-  "name": "boilerplate",
+  "name": "mp-portfolio",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -28,6 +28,7 @@
     "next-themes": "^0.2.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-draggable": "^4.4.6",
     "react-social-icons": "^6.6.0",
     "superjson": "^1.13.1",
     "tailwind-merge": "^2.0.0",
