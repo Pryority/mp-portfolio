@@ -45,9 +45,7 @@ export default function ProjectItem({ project }: ProjectItemProps) {
           )}
         </div>
       </CardContentNoPadding>
-      <CardFooter>
-        <p>Card Footer</p>
-      </CardFooter>
+      <CardFooter>{/* <p>Card Footer</p> */}</CardFooter>
     </Card>
     // <article className="relative flex h-80 justify-center md:w-[512px] lg:h-[448px] lg:w-[640px] 2xl:h-[512px] 2xl:w-[640px]">
     //   <div id="project" className="relative h-full w-screen rounded-md">

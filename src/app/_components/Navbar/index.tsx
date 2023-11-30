@@ -8,7 +8,7 @@ export default function Navbar() {
         <div className="flex w-full flex-col items-end text-center lg:items-start">
           <p className="whitespace-nowrap text-3xl font-extrabold tracking-tight text-slate-900 md:text-5xl">
             Matthew
-            <span className="bg-gradient-to-tr from-amber-600 via-amber-700  to-amber-800 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-tr from-lime-600 via-lime-700  to-lime-800 bg-clip-text text-transparent">
               {" "}
               Pryor
             </span>
