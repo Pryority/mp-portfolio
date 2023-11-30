@@ -18,12 +18,12 @@ export default function Hero() {
       </div>
       <div className="absolute left-0 top-0 flex h-full w-full flex-col items-center justify-start">
         <Navbar />
-        <div className="flex h-full w-full flex-col items-start justify-center gap-8 px-2 pb-24 sm:pb-8 md:gap-16 md:pb-40 lg:max-w-6xl">
-          <div className="flex h-full flex-col justify-center gap-4 sm:w-4/5 lg:w-full">
-            <h1 className="text-left text-3xl font-medium leading-8 tracking-tighter text-[#9c9c9c]/30 dark:text-secondary/30 min-[414px]:w-3/5 md:text-left md:text-6xl lg:text-7xl 2xl:text-8xl ">
+        <div className="flex h-full w-full flex-col items-start justify-center gap-8 px-8 pb-24 sm:pb-8 md:gap-16 md:pb-40 md:pt-16 lg:max-w-6xl lg:pt-0 2xl:pt-16">
+          <div className="flex h-full flex-col justify-center gap-4 sm:w-4/5 md:w-full lg:w-full">
+            <h1 className="text-left text-3xl font-medium leading-8 tracking-tighter text-[#9c9c9c]/50 dark:text-secondary/30 min-[414px]:w-3/5 md:text-left md:text-6xl lg:text-7xl 2xl:text-8xl ">
               Crafting Digital Experiences
             </h1>
-            <h2 className="w-3/4 text-left text-sm tracking-wide text-primary-foreground min-[414px]:w-[60%] md:text-left md:text-xl md:text-primary/80 min-[896px]:w-[62%] 2xl:text-2xl">
+            <h2 className="w-3/4 text-left text-sm tracking-wide text-[#767676]/50 min-[414px]:w-[60%] md:w-1/2 md:text-left md:text-xl min-[896px]:w-[1/3] lg:w-2/5 2xl:text-2xl">
               Transforming Ideas into Seamless, User-Centric Web Solutions
             </h2>
           </div>

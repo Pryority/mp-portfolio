@@ -5,7 +5,7 @@ export default function Navbar() {
   return (
     <header className="z-50 flex h-fit w-full flex-col items-center justify-center overflow-visible p-2 text-left md:flex-row lg:max-w-6xl">
       <div className="z-50 flex w-full items-center md:justify-between">
-        <div className="flex w-full flex-col items-end text-center lg:items-start">
+        <div className="flex flex-col text-center">
           <p className="whitespace-nowrap text-3xl font-extrabold tracking-tight text-slate-900 md:text-5xl">
             Matthew
             <span className="bg-gradient-to-tr from-lime-600 via-lime-700  to-lime-800 bg-clip-text text-transparent">

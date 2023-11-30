@@ -3,7 +3,7 @@ import { getProjects } from "@/sanity/sanity.query";
 
 import ProjectItem from "./ProjectItem";
 
-const orderedProjectIds = [1, 2, 3, 4, 5, 6, 7, 8];
+const orderedProjectIds = [0, 1, 2, 3, 4, 5, 6, 7, 8];
 
 export default async function Showcase() {
   const projects: Project[] = await getProjects();
