@@ -42,4 +42,4 @@ yarn-error.log*
 *.tsbuildinfo
 
 # Sanity Studio
-/sanity-studio
+sanity-studio
