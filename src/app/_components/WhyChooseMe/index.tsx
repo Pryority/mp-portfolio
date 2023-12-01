@@ -17,7 +17,7 @@ export default function WhyChooseMe() {
           Why Choose Me
         </h4>
         <div className="flex w-screen flex-col items-center justify-center gap-4 sm:justify-around sm:px-4 min-[768px]:flex-row">
-          <Card className="flex w-full max-w-xs flex-col items-center bg-secondary-foreground/10 backdrop-blur-md sm:max-w-sm md:h-[80vh]">
+          <Card className="flex w-full max-w-xs flex-col items-center justify-center bg-secondary-foreground/10 backdrop-blur-md sm:max-w-sm md:h-[24rem] lg:h-[24rem]">
             <CardHeader className="flex flex-col items-center">
               <div className="group relative flex items-center justify-center rounded-full">
                 <UserCircle
@@ -38,7 +38,7 @@ export default function WhyChooseMe() {
             </CardContent>
           </Card>
           {/*  */}
-          <Card className="flex w-full max-w-xs flex-col items-center bg-secondary-foreground/10 backdrop-blur-md sm:max-w-sm md:h-[80vh]">
+          <Card className="flex w-full max-w-xs flex-col items-center justify-center bg-secondary-foreground/10 backdrop-blur-md sm:max-w-sm md:h-[24rem] lg:h-[24rem]">
             <CardHeader className="flex flex-col items-center">
               <div className="group relative flex items-center justify-center rounded-full">
                 <ShieldMinus
@@ -60,7 +60,7 @@ export default function WhyChooseMe() {
             </CardContent>
           </Card>
           {/*  */}
-          <Card className="flex w-full max-w-xs flex-col items-center bg-secondary-foreground/10 backdrop-blur-md sm:max-w-sm md:h-[80vh]">
+          <Card className="flex w-full max-w-xs flex-col items-center justify-center bg-secondary-foreground/10 backdrop-blur-md sm:max-w-sm md:h-[24rem] lg:h-[24rem]">
             <CardHeader className="flex flex-col items-center">
               <div className="group relative flex items-center justify-center rounded-full">
                 <MessageSquare
