@@ -6,17 +6,17 @@ import {
   CardHeader,
   CardTitle,
 } from "@/app/_components/ui/card";
-import { MessageSquare, Pentagon, ShieldMinus, UserCircle } from "lucide-react";
+import { MessageSquare, ShieldMinus, UserCircle } from "lucide-react";
 
 export default function WhyChooseMe() {
   return (
-    <div className="relative z-0 mt-64 flex h-full w-full flex-col items-start justify-center bg-gradient-to-t from-cyan-900/20 to-transparent pb-40 text-left sm:items-center md:flex-row 2xl:top-0 2xl:min-h-[30vh]">
+    <div className="relative z-0 flex h-full w-full flex-col items-start justify-center bg-gradient-to-t from-cyan-900/20 to-transparent pb-40 text-left sm:items-center md:flex-row 2xl:top-0 2xl:min-h-screen">
       <div className="absolute -right-96 top-1/2 h-40 w-96 animate-pulse rounded-full bg-cyan-500 blur-[256px] dark:bg-lime-500" />
       <div className="z-10 grid h-full w-full items-center justify-center gap-8 pt-80 sm:max-w-2xl sm:gap-6 sm:pt-40 md:max-w-2xl md:gap-8 lg:max-w-4xl xl:max-w-5xl 2xl:max-w-7xl">
-        <h4 className="text-center text-4xl font-medium tracking-tight text-cyan-900 dark:text-lime-400">
+        <h4 className="text-center font-medium tracking-[-0.5rem] text-cyan-900 dark:text-lime-400 sm:text-4xl 2xl:text-8xl">
           Why Choose Me
         </h4>
-        <div className="flex w-screen flex-col items-center justify-center gap-4 sm:justify-around sm:px-4 min-[768px]:flex-row">
+        <div className="flex w-screen flex-col items-center justify-center gap-4 sm:justify-around sm:px-4 min-[768px]:flex-row 2xl:max-w-7xl">
           <Card className="flex w-full max-w-xs flex-col items-center justify-center bg-secondary-foreground/10 backdrop-blur-md sm:max-w-sm md:h-[24rem] lg:h-[24rem]">
             <CardHeader className="flex flex-col items-center">
               <div className="group relative flex items-center justify-center rounded-full">
@@ -80,10 +80,12 @@ export default function WhyChooseMe() {
             </CardContent>
           </Card>
         </div>
-        {/* 
-          {`Choose me for your software development needs, and let's create
-            outstanding digital experiences together.`}
-       */}
+        <div className="mt-40 flex w-full justify-center">
+          <p className="text-center text-3xl font-light opacity-25 2xl:max-w-4xl">
+            {`Choose me for your software development needs, and let's create
+          outstanding digital experiences together.`}
+          </p>
+        </div>
       </div>
     </div>
   );

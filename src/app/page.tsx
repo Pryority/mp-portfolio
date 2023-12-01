@@ -2,6 +2,7 @@ import Hero from "./_components/Hero";
 import GTKM from "./_components/GTKM";
 import Showcase from "./_components/Showcase";
 import WhyChooseMe from "./_components/WhyChooseMe";
+import Skills from "./_components/Skills";
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
       <GTKM />
       <Showcase />
       <WhyChooseMe />
+      <Skills />
     </main>
   );
 }

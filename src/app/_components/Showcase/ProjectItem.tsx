@@ -1,12 +1,11 @@
 "use client";
 
-import { ArrowTopRightOnSquareIcon } from "@heroicons/react/24/solid";
+// import { ArrowTopRightOnSquareIcon } from "@heroicons/react/24/solid";
 import Image from "next/image";
-import Link from "next/link";
-import Draggable from "react-draggable";
+// import Link from "next/link";
+// import Draggable from "react-draggable";
 import type { Project } from "@/../typings";
-import client from "@/sanity/sanity.client";
-import imageUrlBuilder from "@sanity/image-url";
+
 import {
   Card,
   CardContentNoPadding,
@@ -14,13 +13,12 @@ import {
   CardHeader,
   CardTitle,
 } from "../ui/card";
+import { urlFor } from "@/lib/utils";
 
 interface ProjectItemProps {
   project: Project | null;
 }
-function urlFor(source: string) {
-  return imageUrlBuilder(client).auto("format").image(source);
-}
+
 export default function ProjectItem({ project }: ProjectItemProps) {
   const PROJECT_URL = project?.link ?? "";
   return (

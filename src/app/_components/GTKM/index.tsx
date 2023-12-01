@@ -29,10 +29,10 @@ export default async function GTKM() {
           </div>
         </div>
         <div className="z-40 col-span-2 flex h-full w-full flex-col items-center gap-8 md:items-start md:pl-8 lg:justify-center lg:pl-0">
-          <h3 className="text-center text-3xl font-medium tracking-tight text-lime-700 dark:text-lime-300 sm:text-4xl md:text-left">
+          <h3 className="text-center font-medium tracking-[-0.5rem] text-lime-700 dark:text-lime-400 sm:text-4xl 2xl:text-8xl">
             Getting to Know Me
           </h3>
-          <p className="max-w-[256px] text-left tracking-wide text-primary-foreground sm:max-w-[320px] md:w-full md:max-w-md md:text-left md:text-lg lg:max-w-lg lg:text-xl xl:max-w-xl 2xl:max-w-3xl 2xl:text-xl">
+          <p className="max-w-[256px] text-left tracking-wide text-primary-foreground sm:max-w-[320px] md:w-full md:max-w-md md:text-left md:text-lg lg:max-w-lg lg:text-xl xl:w-5/6 xl:max-w-xl 2xl:w-full 2xl:max-w-6xl 2xl:text-2xl 2xl:leading-[40px]">
             {`Welcome to the creative hub where passion meets expertise. I'm
             Matthew Pryor, a dedicated web developer and digital enthusiast with
             a mission to bring innovative ideas to life. With a keen eye for
