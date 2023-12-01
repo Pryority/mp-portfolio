@@ -13,7 +13,7 @@ export default function Navbar() {
               Pryor
             </span>
           </p>
-          <p className="whitespace-nowrap text-xs uppercase tracking-[8.8px] text-slate-500">
+          <p className="whitespace-nowrap pl-1 text-xs uppercase tracking-[8.8px] text-slate-500 md:text-left">
             Web Developer
           </p>
         </div>

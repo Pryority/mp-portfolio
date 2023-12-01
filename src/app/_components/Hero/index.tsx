@@ -27,7 +27,7 @@ export default function Hero() {
               Transforming Ideas into Seamless, User-Centric Web Solutions
             </h2>
           </div>
-          <div className="flex w-full items-center justify-center gap-4 lg:justify-start">
+          {/* <div className="flex w-full items-center justify-center gap-4 lg:justify-start">
             <Button
               className="flex w-[200px] justify-center"
               variant={"secondary"}
@@ -40,7 +40,7 @@ export default function Hero() {
             >
               Start a Project
             </Button>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
