@@ -4,7 +4,7 @@ import { useTypewriter } from "react-simple-typewriter";
 export default function TypewriterText() {
   const [text, count] = useTypewriter({
     words: [
-      "Hello, World!",
+      "Hello",
       "こんにちは",
       "Bonjour",
       "مرحبًا",
@@ -17,9 +17,11 @@ export default function TypewriterText() {
     delaySpeed: 2000,
   });
   return (
-    <div className="relative z-40 flex h-screen w-full text-left text-4xl font-light text-primary-foreground/20">
-      <p className="absolute bottom-0 right-2 h-[1px]">{text}</p>
-      {/* <span className="absolute bottom-0 h-40 w-40"> </span> */}
-    </div>
+    // <div className="relative z-50 flex h-screen w-full text-left text-4xl font-light text-primary-foreground opacity-20">
+    <p className="absolute bottom-8 right-2 z-50 h-[8px] text-4xl font-extralight text-primary-foreground opacity-20">
+      {text}
+    </p>
+
+    // </div>
   );
 }
