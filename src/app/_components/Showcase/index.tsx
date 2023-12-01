@@ -17,7 +17,7 @@ export default async function Showcase() {
       <div className="absolute top-40 grid grid-cols-1 items-center justify-around gap-8 overflow-clip sm:grid-cols-2 md:gap-16 lg:grid-cols-6 xl:grid-cols-6 2xl:top-24 2xl:grid-cols-8">
         <div className="col-span-1 flex h-fit w-full flex-col items-center gap-8 sm:items-start lg:col-span-2 2xl:col-span-3">
           <h4 className="text-center text-2xl font-medium tracking-tight text-amber-600 dark:text-amber-400 sm:text-left  md:text-left md:text-4xl  2xl:text-4xl">
-            Portfolio Showcase
+            Project Showcase
           </h4>
           <p className="hidden text-left tracking-wide text-primary-foreground sm:block md:text-left md:text-lg lg:text-xl xl:w-5/6 2xl:max-w-3xl 2xl:text-2xl 2xl:leading-[40px]">
             Explore a curated selection of my recent projects that highlight my
