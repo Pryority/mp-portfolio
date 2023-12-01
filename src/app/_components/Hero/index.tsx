@@ -2,10 +2,13 @@ import React from "react";
 import { Button } from "@/app/_components/ui/button";
 import Image from "next/image";
 import Navbar from "@/app/_components/Navbar";
+import { useTypewriter } from "react-simple-typewriter";
+import TypewriterText from "./TypewriterText";
 
 export default function Hero() {
   return (
     <div className="relative z-0 flex h-[512px] w-full flex-col items-center justify-center overflow-visible bg-secondary text-left sm:h-[340px] md:h-[512px] md:flex-row lg:h-[640px]">
+      <TypewriterText />
       <div className="absolute top-0 z-0 flex h-full w-full overflow-clip ">
         <Image
           src={"/Matt-japan-mountain.jpg"}
