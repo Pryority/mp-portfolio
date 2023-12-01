@@ -13,7 +13,7 @@ export default async function GTKM() {
           <Image
             src={"/headshot-no-bg.png"}
             alt=""
-            className="object-contain"
+            className="object-contain drop-shadow-lg"
             fill
             sizes="100vw"
           />
