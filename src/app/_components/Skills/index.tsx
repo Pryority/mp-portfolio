@@ -1,5 +1,5 @@
 import React from "react";
-import type { Skill } from "../../../../typings";
+import type { Skill } from "@/../typings";
 import { getSkills } from "@/sanity/sanity.query";
 import Image from "next/image";
 import { urlFor } from "@/lib/utils";
