@@ -32,7 +32,7 @@ export default async function GTKM() {
           <h3 className="text-center text-3xl font-medium tracking-tight text-lime-700 dark:text-lime-300 sm:text-4xl md:text-left">
             Getting to Know Me
           </h3>
-          <p className="max-w-[256px] text-left tracking-wide text-primary-foreground sm:max-w-[320px] md:w-full md:max-w-md md:text-left md:text-lg lg:max-w-lg lg:text-xl 2xl:text-xl">
+          <p className="max-w-[256px] text-left tracking-wide text-primary-foreground sm:max-w-[320px] md:w-full md:max-w-md md:text-left md:text-lg lg:max-w-lg lg:text-xl xl:max-w-xl 2xl:max-w-3xl 2xl:text-xl">
             {`Welcome to the creative hub where passion meets expertise. I'm
             Matthew Pryor, a dedicated web developer and digital enthusiast with
             a mission to bring innovative ideas to life. With a keen eye for
