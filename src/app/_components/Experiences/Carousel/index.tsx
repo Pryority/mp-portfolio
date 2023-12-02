@@ -13,6 +13,14 @@ import {
   CardHeader,
   CardTitle,
 } from "@/app/_components/ui/card";
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "@/app/_components/ui/dialog";
 
 interface Props {
   experiences: Experience[];
@@ -70,7 +78,19 @@ export default function Carousel({ experiences }: Props) {
               </div>
             </CardContent>
             <CardFooter>
-              <p>Card Footer</p>
+              <Dialog>
+                <DialogTrigger>View Key Learnings</DialogTrigger>
+                <DialogContent className="2xl:max-w-2xl">
+                  <DialogHeader>
+                    <DialogTitle className="2xl:text-5xl">
+                      {exp.company} Key Learnings
+                    </DialogTitle>
+                    <DialogDescription className="pt-8 2xl:text-xl">
+                      {exp.keyLearnings}
+                    </DialogDescription>
+                  </DialogHeader>
+                </DialogContent>
+              </Dialog>
             </CardFooter>
           </Card>
         ))}

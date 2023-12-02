@@ -86,6 +86,9 @@
   body {
     @apply bg-background text-foreground;
     }
+  .title-text {
+    @apply text-3xl sm:text-4xl md:text-left 2xl:text-8xl tracking-tighter font-medium;
+  }
 }
 
 /* Hide scrollbar for Chrome, Safari and Opera */
