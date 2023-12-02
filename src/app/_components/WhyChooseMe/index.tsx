@@ -16,15 +16,15 @@ export default function WhyChooseMe() {
         <h4 className="title-text text-center text-cyan-900 dark:text-lime-400">
           Why Choose Me
         </h4>
-        <div className="flex w-screen flex-col items-center justify-center gap-4 sm:justify-around sm:px-4 min-[768px]:flex-row 2xl:max-w-7xl">
+        <div className="flex w-screen flex-col items-center justify-center gap-4 px-2 sm:justify-around sm:px-4 min-[768px]:flex-row 2xl:max-w-7xl">
           <Card className="flex w-full max-w-xs flex-col items-center justify-center bg-secondary-foreground/10 backdrop-blur-md sm:max-w-sm md:h-[24rem] lg:h-[24rem]">
             <CardHeader className="flex flex-col items-center">
-              <div className="group relative flex items-center justify-center rounded-full">
+              <div className="group relative flex items-center justify-center rounded-3xl">
                 <UserCircle
                   size={104}
                   className="absolute z-20 text-primary invert transition-all duration-75 ease-in-out group-hover:text-cyan-100 group-hover:invert-0 dark:invert-0"
                 />
-                <div className="h-[128px] w-[128px] rounded-full border-2 border-primary/20 bg-background/20 invert group-hover:bg-[#1e1e1e] group-hover:invert-0" />
+                <div className="h-[128px] w-[128px] rounded-3xl border-2 border-primary/20 bg-background/20 invert group-hover:bg-[#1e1e1e] group-hover:invert-0" />
               </div>
             </CardHeader>
             <CardContent>
@@ -40,12 +40,12 @@ export default function WhyChooseMe() {
           {/*  */}
           <Card className="flex w-full max-w-xs flex-col items-center justify-center bg-secondary-foreground/10 backdrop-blur-md sm:max-w-sm md:h-[24rem] lg:h-[24rem]">
             <CardHeader className="flex flex-col items-center">
-              <div className="group relative flex items-center justify-center rounded-full">
+              <div className="group relative flex items-center justify-center rounded-3xl">
                 <ShieldMinus
                   size={104}
                   className="absolute z-20 translate-y-1 text-primary invert transition-all duration-75 ease-in-out group-hover:text-cyan-100 group-hover:invert-0 dark:invert-0"
                 />
-                <div className="h-[128px] w-[128px] rounded-full border-2 border-primary/20 bg-background/20 invert group-hover:bg-[#1e1e1e] group-hover:invert-0" />
+                <div className="h-[128px] w-[128px] rounded-3xl border-2 border-primary/20 bg-background/20 invert group-hover:bg-[#1e1e1e] group-hover:invert-0" />
               </div>
             </CardHeader>
             <CardContent>
@@ -62,12 +62,12 @@ export default function WhyChooseMe() {
           {/*  */}
           <Card className="flex w-full max-w-xs flex-col items-center justify-center bg-secondary-foreground/10 backdrop-blur-md sm:max-w-sm md:h-[24rem] lg:h-[24rem]">
             <CardHeader className="flex flex-col items-center">
-              <div className="group relative flex items-center justify-center rounded-full">
+              <div className="group relative flex items-center justify-center rounded-3xl">
                 <MessageSquare
                   size={80}
                   className="absolute z-20 text-primary invert transition-all duration-75 ease-in-out group-hover:text-cyan-100 group-hover:invert-0 dark:invert-0"
                 />
-                <div className="h-[128px] w-[128px] rounded-full border-2 border-primary/20 bg-background/20 invert group-hover:bg-[#1e1e1e] group-hover:invert-0" />
+                <div className="h-[128px] w-[128px] rounded-3xl border-2 border-primary/20 bg-background/20 invert group-hover:bg-[#1e1e1e] group-hover:invert-0" />
               </div>
             </CardHeader>
             <CardContent>
@@ -80,12 +80,12 @@ export default function WhyChooseMe() {
             </CardContent>
           </Card>
         </div>
-        <div className="mt-40 flex w-full justify-center">
+        {/* <div className="mt-40 flex w-full justify-center">
           <p className="max-w-xs text-center font-light opacity-25 sm:text-xl md:text-2xl lg:text-3xl 2xl:max-w-4xl">
             {`Choose me for your software development needs, and let's create
           outstanding digital experiences together.`}
           </p>
-        </div>
+        </div> */}
       </div>
     </div>
   );

@@ -29,6 +29,7 @@ interface Props {
 
 export default function Carousel({ experiences }: Props) {
   const [active, setActive] = useState(0);
+
   return (
     <section className="absolute inset-0 flex min-h-screen flex-col items-center justify-center">
       <button
@@ -45,7 +46,7 @@ export default function Carousel({ experiences }: Props) {
             }
             setActive((prev) => prev - 1);
           }}
-          className="hidden text-primary opacity-80 md:absolute md:bottom-8"
+          className="hidden text-primary opacity-80 md:absolute"
         />
         <ArrowLeftCircle
           size={64}
@@ -59,7 +60,7 @@ export default function Carousel({ experiences }: Props) {
         />
 
         <div
-          className={`h-[64px] w-[64px] rounded-full border-2 border-primary/20 bg-[#1e1e1e]/80 md:h-[128px] md:w-[128px] ${
+          className={`h-[64px] w-[64px] rounded-full border-2 border-primary/20 bg-[#1e1e1e]/80 md:h-[80px] md:w-[80px] ${
             active === 0 ? "" : "group-hover:bg-[#1e1e1e]"
           }`}
         />
@@ -68,7 +69,7 @@ export default function Carousel({ experiences }: Props) {
         {experiences.map((exp, i) => (
           <Card
             key={i}
-            className={`flex min-h-[344px] w-[80vw] flex-col justify-between sm:min-h-[300px] sm:max-w-sm 2xl:min-w-[720px] ${
+            className={`flex min-h-[344px] w-[80vw] flex-col justify-between sm:min-h-[300px] sm:max-w-sm md:h-[60vh] 2xl:min-w-[720px] ${
               i === active ? "relative  opacity-100" : "hidden"
             }`}
           >
@@ -82,23 +83,25 @@ export default function Carousel({ experiences }: Props) {
             </CardHeader>
             <CardContent className="relative m-2 flex flex-col items-center">
               <div
-                className={`group absolute inset-0 h-[128px] w-full -translate-y-8 items-center justify-center overflow-clip rounded-md border transition-all md:h-56 md:w-56 2xl:h-[512px] 2xl:w-full`}
+                className={`group absolute h-[128px] w-full -translate-y-8 items-center justify-center overflow-clip rounded-md border transition-all md:h-[320px] md:-translate-y-32 2xl:h-[512px] 2xl:w-full`}
               >
                 <Image
                   src={urlFor(exp.companyImage.asset._ref).url()}
                   fill
                   alt={""}
+                  sizes="100vw"
                   className="rounded-md object-cover transition-all duration-500 group-hover:scale-105"
                 />
               </div>
             </CardContent>
             <CardFooter className="justify-center">
               <Dialog>
-                <Button variant={"secondary"}>
+                <div className="inline-flex h-10 items-center justify-center rounded-[10px] bg-secondary px-4 py-2 text-sm font-medium text-secondary-foreground ring-offset-background transition-colors hover:bg-secondary/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50">
                   <DialogTrigger className="flex items-center gap-2">
                     Key Learnings <EyeIcon size={20} />
                   </DialogTrigger>
-                </Button>
+                </div>
+
                 <DialogContent className="2xl:max-w-2xl">
                   <DialogHeader>
                     <DialogTitle className="text-left sm:text-center 2xl:text-5xl">
@@ -128,7 +131,7 @@ export default function Carousel({ experiences }: Props) {
             }
             setActive((prev) => prev + 1);
           }}
-          className="hidden text-primary opacity-80 md:absolute md:bottom-8"
+          className="hidden text-primary opacity-80 md:absolute"
         />
         <ArrowRightCircle
           size={64}
@@ -142,7 +145,7 @@ export default function Carousel({ experiences }: Props) {
         />
 
         <div
-          className={`h-[64px] w-[64px] rounded-full border-2 border-primary/20 bg-[#1e1e1e]/80 md:h-[128px] md:w-[128px] ${
+          className={`h-[64px] w-[64px] rounded-full border-2 border-primary/20 bg-[#1e1e1e]/80 md:h-[80px] md:w-[80px] ${
             active === experiences.length - 1 ? "" : "group-hover:bg-[#1e1e1e]"
           }`}
         />
