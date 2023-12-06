@@ -7,7 +7,7 @@ import { urlFor } from "@/lib/utils";
 export default async function Skills() {
   const skills: Skill[] = await getSkills();
   return (
-    <div className="relative z-0 mt-64 flex min-h-screen w-full flex-col items-center justify-center gap-16 bg-gradient-to-t from-cyan-900/20 to-transparent pb-40 text-left sm:items-center 2xl:top-0">
+    <div className="to-transparentpb-40 relative  z-0 flex min-h-screen w-full flex-col items-center justify-center gap-16 bg-gradient-to-b from-secondary-foreground/20 text-left sm:items-center 2xl:top-0">
       <h4 className="title-text text-center text-cyan-700 dark:text-cyan-300">
         Skills
       </h4>

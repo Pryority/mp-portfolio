@@ -13,7 +13,7 @@ export default function Home() {
       <Showcase />
       <WhyChooseMe />
       <Skills />
-      <div className="z-50 min-h-[266px] w-full bg-cyan-500"></div>
+      {/* <div className="z-50 min-h-[32px] w-full bg-secondary-foreground/80"></div> */}
       <Experiences />
     </main>
   );
