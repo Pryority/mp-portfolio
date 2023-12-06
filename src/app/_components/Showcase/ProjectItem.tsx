@@ -22,7 +22,7 @@ interface ProjectItemProps {
 export default function ProjectItem({ project }: ProjectItemProps) {
   return (
     //<Draggable axis="x" bounds="parent">
-    <Card className="flex h-[320px] w-[384px] flex-col">
+    <Card className="flex h-[320px] w-[384px] flex-col lg:h-[480px] lg:w-[576px]">
       <CardHeader>
         <CardTitle>{project?.title}</CardTitle>
         {/* <CardDescription>{project?}</CardDescription> */}
