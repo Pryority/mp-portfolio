@@ -7,15 +7,15 @@ import { urlFor } from "@/lib/utils";
 export default async function Skills() {
   const skills: Skill[] = await getSkills();
   return (
-    <div className="relative z-0 mt-64 flex h-full w-full flex-col items-center justify-center gap-16 bg-gradient-to-t from-cyan-900/20 to-transparent pb-40 text-left sm:items-center 2xl:top-0 2xl:min-h-screen">
+    <div className="relative z-0 mt-64 flex min-h-screen w-full flex-col items-center justify-center gap-16 bg-gradient-to-t from-cyan-900/20 to-transparent pb-40 text-left sm:items-center 2xl:top-0">
       <h4 className="title-text text-center text-cyan-700 dark:text-cyan-300">
         Skills
       </h4>
-      <div className="flex h-full grid-cols-2 flex-wrap items-center justify-center gap-2 2xl:max-w-6xl">
+      <div className="xs:max-w-lg flex h-full grid-cols-2 flex-wrap items-center justify-center gap-2 sm:max-w-xl md:max-w-3xl 2xl:max-w-3xl">
         {skills.map((skill, i) => (
           <div
             key={i}
-            className={`group relative h-32 w-32 items-center justify-center overflow-clip rounded-full transition-all md:h-56 md:w-56 2xl:h-64 2xl:w-64`}
+            className={`group relative h-32 w-32 items-center justify-center overflow-clip rounded-full transition-all md:h-40 md:w-40`}
           >
             <Image
               src={urlFor(skill.image.asset._ref).url()}
