@@ -11,10 +11,10 @@ export default async function Showcase() {
     (projectId) => projects.find((project) => project.id === projectId) ?? null,
   );
   return (
-    <div className="relative z-30 flex h-[600px]  w-full flex-col items-center justify-center overflow-visible bg-secondary text-left scrollbar-thin scrollbar-thumb-red-500 sm:pl-8 md:flex-row md:pl-12 2xl:min-h-[50vh]">
-      <div className="absolute left-0 top-0 h-[900px] w-full -skew-y-6 bg-primary dark:bg-[#0a0c0f] sm:h-[680px] xl:-skew-y-3 2xl:-top-12 2xl:h-[720px] 2xl:-skew-y-3" />
+    <div className="relative z-30 flex min-h-screen w-full flex-col items-center justify-center overflow-visible bg-secondary text-left scrollbar-thin scrollbar-thumb-red-500 sm:pl-8 md:flex-row md:pl-12 lg:pl-16 xl:pl-32 2xl:min-h-screen">
+      <div className="absolute left-0 top-0 min-h-screen w-full -skew-y-6 bg-primary dark:bg-[#0a0c0f] sm:h-[680px] xl:-skew-y-3 2xl:-top-12 2xl:h-[90vh] 2xl:-skew-y-2" />
       {/* <div className="absolute inset-0 z-0 bg-gradient-to-b from-background via-background/70 to-background/20" /> */}
-      <div className="absolute top-40 grid grid-cols-1 items-center justify-around gap-8 overflow-clip sm:grid-cols-2 md:gap-16 lg:grid-cols-6 xl:grid-cols-6 2xl:top-24 2xl:grid-cols-8">
+      <div className="z-50 grid grid-cols-1 items-center justify-around gap-8 overflow-clip sm:grid-cols-2 md:gap-16 lg:grid-cols-6 xl:grid-cols-6 2xl:grid-cols-8">
         <div className="col-span-1 flex h-fit w-full flex-col items-center gap-8 sm:items-start lg:col-span-2 2xl:col-span-3">
           <h4 className="text-center text-2xl font-medium tracking-tight text-amber-600 dark:text-amber-400 sm:text-left  md:text-left md:text-4xl  2xl:text-4xl">
             Project Showcase
