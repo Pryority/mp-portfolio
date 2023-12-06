@@ -69,8 +69,10 @@ export default function Carousel({ experiences }: Props) {
         />
 
         <div
-          className={`h-[56px] w-[56px] rounded-full border-2 border-primary/20 bg-[#1e1e1e]/80 sm:h-[64px] sm:w-[64px] md:h-[80px] md:w-[80px] ${
-            active === 0 ? "" : "group-hover:bg-[#1e1e1e]"
+          className={`h-[56px] w-[56px] rounded-full border-2 border-primary/20 bg-[#1e1e1e]/80 shadow-lg transition-all duration-100 ease-in-out dark:bg-[#f7f7f7]/80 sm:h-[64px] sm:w-[64px] md:h-[80px] md:w-[80px] ${
+            active === 0
+              ? "shadow-none"
+              : "dark:group-hover group-hover:bg-[#1e1e1e] dark:group-hover:bg-[#f7f7f7]"
           }`}
         />
       </button>
@@ -81,7 +83,7 @@ export default function Carousel({ experiences }: Props) {
             className="absolute left-1/2 top-1/2 flex w-full -translate-x-1/2 -translate-y-1/2 flex-col items-center p-4"
           >
             <Card
-              className={`flex max-h-[50vh] w-[96vw] flex-col justify-between sm:h-[80vh] sm:w-[50vw] lg:h-[60vh] lg:w-[33vw]  ${
+              className={`flex max-h-[50vh] w-[96vw] flex-col justify-between shadow-lg sm:h-[80vh] sm:w-[50vw] lg:h-[60vh] lg:w-[33vw]  ${
                 i === active ? "relative  opacity-100" : "hidden"
               }`}
             >
@@ -116,10 +118,10 @@ export default function Carousel({ experiences }: Props) {
 
                   <DialogContent className="scale-90 2xl:max-w-2xl">
                     <DialogHeader>
-                      <DialogTitle className="text-left sm:text-center 2xl:text-5xl">
+                      <DialogTitle className="text-left sm:max-md:text-center 2xl:text-5xl">
                         {exp.company} Key Learnings
                       </DialogTitle>
-                      <DialogDescription className="pt-4 text-left sm:text-center 2xl:text-xl">
+                      <DialogDescription className="pt-4 text-left sm:max-md:text-center 2xl:text-xl">
                         {exp.keyLearnings}
                       </DialogDescription>
                     </DialogHeader>
@@ -168,8 +170,10 @@ export default function Carousel({ experiences }: Props) {
         />
 
         <div
-          className={`h-[56px] w-[56px] rounded-full border-2 border-primary/20 bg-[#1e1e1e]/80 sm:h-[64px] sm:w-[64px] md:h-[80px] md:w-[80px] ${
-            active === experiences.length - 1 ? "" : "group-hover:bg-[#1e1e1e]"
+          className={`h-[56px] w-[56px] rounded-full border-2 border-primary/20 bg-[#1e1e1e]/80 shadow-lg transition-all duration-100 ease-in-out dark:bg-[#f7f7f7]/80 sm:h-[64px] sm:w-[64px] md:h-[80px] md:w-[80px] ${
+            active === experiences.length - 1
+              ? "shadow-none"
+              : "group-hover:bg-[#1e1e1e]  dark:group-hover:bg-[#f7f7f7]"
           }`}
         />
       </button>

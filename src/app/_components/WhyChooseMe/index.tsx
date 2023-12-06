@@ -24,7 +24,7 @@ export default function WhyChooseMe() {
                   size={104}
                   className="absolute z-20 text-primary invert transition-all duration-75 ease-in-out group-hover:text-cyan-100 group-hover:invert-0 dark:invert-0"
                 />
-                <div className="h-[128px] w-[128px] rounded-3xl border-2 border-primary/20 bg-background/20 invert group-hover:bg-[#1e1e1e] group-hover:invert-0" />
+                <div className="h-[128px] w-[128px] rounded-3xl bg-background/20 invert group-hover:bg-[#1e1e1e] group-hover:invert-0" />
               </div>
             </CardHeader>
             <CardContent>
@@ -45,7 +45,7 @@ export default function WhyChooseMe() {
                   size={104}
                   className="absolute z-20 translate-y-1 text-primary invert transition-all duration-75 ease-in-out group-hover:text-cyan-100 group-hover:invert-0 dark:invert-0"
                 />
-                <div className="h-[128px] w-[128px] rounded-3xl border-2 border-primary/20 bg-background/20 invert group-hover:bg-[#1e1e1e] group-hover:invert-0" />
+                <div className="h-[128px] w-[128px] rounded-3xl bg-background/20 invert group-hover:bg-[#1e1e1e] group-hover:invert-0" />
               </div>
             </CardHeader>
             <CardContent>
@@ -67,7 +67,7 @@ export default function WhyChooseMe() {
                   size={80}
                   className="absolute z-20 text-primary invert transition-all duration-75 ease-in-out group-hover:text-cyan-100 group-hover:invert-0 dark:invert-0"
                 />
-                <div className="h-[128px] w-[128px] rounded-3xl border-2 border-primary/20 bg-background/20 invert group-hover:bg-[#1e1e1e] group-hover:invert-0" />
+                <div className="h-[128px] w-[128px] rounded-3xl bg-background/20 invert group-hover:bg-[#1e1e1e] group-hover:invert-0" />
               </div>
             </CardHeader>
             <CardContent>
