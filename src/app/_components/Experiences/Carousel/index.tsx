@@ -30,7 +30,7 @@ export default function Carousel({ experiences }: Props) {
   const [active, setActive] = useState(0);
 
   return (
-    <section className="absolute inset-0 flex min-h-screen flex-col items-center justify-center">
+    <section className="flex  flex-col items-center justify-center">
       <button
         disabled={active === 0 ? true : false}
         className={`group absolute bottom-2 left-2 z-10 sm:bottom-[50vh] sm:left-4 sm:translate-y-8  md:left-8 lg:bottom-1/2 lg:left-24 xl:left-1/4 ${
@@ -81,7 +81,7 @@ export default function Carousel({ experiences }: Props) {
             className="absolute left-1/2 top-1/2 flex w-full -translate-x-1/2 -translate-y-1/2 flex-col items-center p-4"
           >
             <Card
-              className={`flex max-h-[50vh] min-h-[344px] flex-col justify-between sm:w-[50vw] lg:w-[33vw]  ${
+              className={`flex max-h-[50vh] w-[96vw] flex-col justify-between sm:h-[80vh] sm:w-[50vw] lg:h-[60vh] lg:w-[33vw]  ${
                 i === active ? "relative  opacity-100" : "hidden"
               }`}
             >

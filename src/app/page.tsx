@@ -13,7 +13,7 @@ export default function Home() {
       <Showcase />
       <WhyChooseMe />
       <Skills />
-      <div className="z-50 min-h-[266px] w-full bg-red-500"></div>
+      <div className="z-50 min-h-[266px] w-full bg-cyan-500"></div>
       <Experiences />
     </main>
   );
